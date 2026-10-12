@@ -1,0 +1,24 @@
+[project]
+name = "ai-stock-analyst"
+version = "0.1.0"
+description = "Personal stock portfolio analytics and Groq-powered insights"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "groq>=0.32.0",
+  "numpy>=2.1.0",
+  "pandas>=2.2.3",
+  "plotly>=5.24.1",
+  "python-dotenv>=1.0.1",
+  "scipy>=1.14.1",
+  "streamlit>=1.39.0",
+  "yfinance>=0.2.54",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3.3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
